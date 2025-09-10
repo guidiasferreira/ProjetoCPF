@@ -1,5 +1,5 @@
 
-def validar_primeiro(cpf):
+def primeiro_digito(cpf):
     cpf_formatado = cpf[:9]
 
     soma = 0
@@ -28,7 +28,7 @@ def validar_primeiro(cpf):
     return resultado
 
 
-def validar_segundo(cpf):
+def segundo_digito(cpf):
     cpf_formatado = cpf[:10]
 
     soma = 0
@@ -64,7 +64,7 @@ def validar(cpf):
     if (cpf == cpf[0] * len(cpf)):
         return False
     
-    primeiro_digito = validar_primeiro(cpf)
-    segundo_digito = validar_segundo(cpf)
+    primeiro = primeiro_digito(cpf)
+    segundo = segundo_digito(cpf)
     
-    return(cpf[-2:] == f"{primeiro_digito}{segundo_digito}")
+    return(cpf[-2:] == f"{primeiro}{segundo}")
