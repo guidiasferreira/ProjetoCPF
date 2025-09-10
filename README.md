@@ -5,9 +5,9 @@
 <h2>Arquivos do Projeto</h2>
 <ul>
   <li><strong>main.py</strong>: Arquivo principal, onde o usuário pode escolher 3 opções: 
-  <li><strong>1. Gerar um CPF</strong></li> 
-  <li><strong>2. Validar um CPF</strong></li>
-  <li><strong>3. Sair do programa</strong></li>
+  <li><strong><pre>1. Gerar um CPF</pre></strong></li> 
+  <li><strong><pre>2. Validar um CPF</pre></strong></li>
+  <li><strong><pre>3. Sair do programa</pre></strong></li>
   </li>
 
   <li><strong>gerar_cpf.py</strong>: Responsável por gerar um CPF válido para o usuário.</li>
