@@ -1,7 +1,5 @@
 from random import randint
-import validar_cpf
-import validar_cpf
-import validar_cpf
+from validar_cpf import validar, primeiro_digito, segundo_digito
 
 def gerar():
     cpf = ""
@@ -9,18 +7,14 @@ def gerar():
     for i in range(9):
         cpf += str(randint(0, 9))
 
-    cpf.replace(".", "").replace("-", "").replace(" ", "") 
+    primeiro = str(primeiro_digito(cpf))
+    segundo = str(segundo_digito(cpf))
 
-    primeiro_digito = str(validar_cpf.validar_primeiro(cpf))
-    segundo_digito = str(validar_cpf.validar_segundo(cpf))
-    validacao = str(validar_cpf.validar(cpf))
+    cpf_completo = cpf + primeiro + segundo
 
-    if (validacao):
-        cpf_formatado = cpf[:3] + "." + cpf[3:6] + "." + cpf[6:9] + "-" + primeiro_digito + segundo_digito
+    if (validar(cpf_completo)):
+        cpf_formatado = cpf_completo[:3] + "." + cpf_completo[3:6] + "." + cpf_completo[6:9] + "-" + cpf_completo[9:]
+        return f"CPF gerado: {cpf_formatado}"
     
     else:
-        gerar()
-
-    return f"CPF gerado: {cpf_formatado}"
-
-#Editando CPF para ficar no formato: ###.###.###-##
+        return gerar()
