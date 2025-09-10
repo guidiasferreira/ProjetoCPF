@@ -45,7 +45,7 @@
 3. Sair do programa
 
 Escolha uma opção: 1
-CPF gerado: 123.456.789-09
+CPF gerado: 235.842.277-04
 </code></pre>
 
 <pre><code>Gerador & Validador de CPF
@@ -54,7 +54,7 @@ CPF gerado: 123.456.789-09
 3. Sair do programa
 
 Escolha uma opção: 2
-Digite o CPF: 123.456.789-09
+Digite o CPF: 890.230.395-05
 CPF válido! ✅
 </code></pre>
 
