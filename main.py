@@ -5,6 +5,7 @@ from time import sleep
 
 def menu():
     print()
+    print("Gerador & Validador de CPF")
     print("1. Gerar CPF")
     print("2. Validar CPF")
     print("3. Sair do programa")
